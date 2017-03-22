@@ -1,6 +1,4 @@
 # backboneFirst
-Este proyecto está reservado a aprender backbone en todo su esplendor, 
-se añadirá un archivo.js por cada nueva práctica y se cargará en el archivo principal.html para probar.
-
-
+Este "mini" proyecto tendrá el objetivo de aprender el enrutamiento en BB y el manejo de varias vistas y templates
+<div style="background:lightblue; display:block;">&nbsp;</div>
 <h1> Happy Coding </h1>
