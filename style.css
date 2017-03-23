@@ -1,0 +1,10 @@
+#principal {
+    display: inline-block;
+    border: 10px thin solid;
+    background-color: lightblue;
+    padding: 10px;
+}
+
+.foto {
+    height: 75px;
+}

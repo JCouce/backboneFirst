@@ -6,7 +6,20 @@
         Views: {},
         Router: {}
     };
+    App.Models.Player = Backbone.Model.extend({
+        defaults: {
+            name: 'anyNameHere',
+            surname: 'perez',
+            position: 'posicion',
+            number: '1',
+            peso: 100,
+            altura: 104,
+            mote: 'el carnicero',
+            imagen: '/img/example.jpg',
+            equipo: 'canoe'
 
+        }
+    });
     App.Router = Backbone.Router.extend({
         routes: {
             '': 'index',

@@ -2,24 +2,62 @@
 <html>
 
 <head>
+    <title>Backbone example</title>
     <meta charset="utf-8">
-    <title>Routes-backbonejs</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </head>
 
 <body style="margin: 0;padding: 0;">
+    <!--Template declarations-->
+    <script id="jugadorTemplate" type="text/template">
+        <div class="container">
+            <div class="page-header">
+                <h1>
+                    <%= name %>
+                        <%= mote %>
+                            <%= position %>
+                </h1>
+                <img id="imagenes" src="img/jugadores/bokeron.jpg" class="img-circle foto">
+            </div>
+            <div class="jumbotron">
+                <div class="col-xs-6" id="datos">
+                    <h1>
+                        <%= equipo %>
+                    </h1>
+                    <div> <strong>Nombre completo:</strong>
+                        <%= name %>
+                            <%= surname %>
+                    </div>
+                    <div> <strong>Peso: </strong>
+                        <%= peso %>KG </div>
+                    <div> <strong>Altura:</strong>
+                        <%= altura %>CM</div>
+                    <div> <strong>Dorsal: <%= number %></strong></div>
+                    <div> <strong>Mote: </strong>
+                        <%= mote %>
+                    </div>
+                </div>
+                <img id="imagenes" src="img/equipos/Crc_madrid.jpg" class="img-rounded col-xs-6" alt="Cinque Terre">
+                <div style="clear: both;"></div>
+            </div>
+            <p>This is some text.</p>
+            <p>This is another text.</p>
+        </div>
+    </script>
+    <!--End Template declarations-->
+
+
     <header style="background-color: steelblue; display: block;">&nbsp;</header>
     <subheader style="background-color:lightskyblue; display: block;">&nbsp;</subheader>
-    <div style="margin: 0; cursor:pointer;display:  inline-block; width:25%; height: 20px; border:1px solid; background: deepskyblue; padding: 10px; text-align: center;">Show</div>
-    <div style="margin: 0; cursor:pointer;display:  inline-block; width:25%; height: 20px; border:1px solid; background: deepskyblue; padding: 10px; text-align: center;">Show id</div>
-    <div style="margin: 0; cursor:pointer;display:  inline-block; width:25%; height: 20px; border:1px solid; background: deepskyblue; padding: 10px; text-align: center;">Random</div>
-    <div style="margin: 0; cursor:pointer;display:  inline-block; width:25%; height: 20px; border:1px solid; background: deepskyblue; padding: 10px; text-align: center;">Error</div>
     <div style="width: 60%; margin-left: 20%;" id="main"></div>
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/underscore/underscore.js"></script>
     <script src="node_modules/backbone/backbone-min.js"></script>
 
-    <script src="main.js" type="text/javascript"></script>
+    <script src="jugador.js" type="text/javascript"></script>
 </body>
 
 </html>
